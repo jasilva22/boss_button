@@ -1,0 +1,67 @@
+<script>
+
+//event detection for a boss button
+
+window.addEventListener("keyup", function (event) {
+    console.log(event);
+    if(event.defaultPrevented) {
+        return; //should do nothing if the default action has been cancelled
+    }
+    
+    var handled = false;
+    if (event.key !== undefined) {
+        if (event.keyCode == 13) {
+            window.location = 'https://www.amazon.com/Bluegrass-Mugs-Funny-Worlds-Best/dp/B07BTF84YW/ref=sr_1_1_sspa?keywords=worlds+best+boss&qid=1553035069&s=gateway&sr=8-1-spons&psc=1';
+        }
+        //handle the event with a KeyboardEvent.keyIdentifier and set handled true
+    } else if (event.keyIdentifier !== undefined) {
+        //handle the event with Keyboard.Event.keyIdentifier and set handled true
+    } else if (event.keyCode !== undefined) {
+        
+        //handle the event with KeyboardEvent.keyCode and set handled true
+    }
+    
+    if (handled) {
+        //supress "double action" if event handled
+        event.preventDefault();
+    }
+}, true);
+
+</script>
+<html>
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+<style>
+    body {
+        font-family: 'Roboto', sans-serif;
+    }
+    
+    #container {
+        display: grid;
+    }
+    
+    h1 {
+        grid-column-start: 1fr;
+        grid-column-end: 4fr;
+    }
+    
+    
+    
+</style>
+
+</head>
+    
+<body>
+    <div id="container">
+<h1>SUPPOSED TO BE WORKING?</h1>
+<br>
+<h1>Don't want your boss to see your desktop?</h1>
+<br>
+<h2>Just hit ENTER</h2><br>
+<h3>...and hide it all...</h3>
+    </div>
+</body>
+    
+    
+    
+</html>
