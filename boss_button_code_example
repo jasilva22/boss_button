@@ -33,33 +33,31 @@ window.addEventListener("keyup", function (event) {
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 <style>
     body {
-        font-family: 'Roboto', sans-serif;
+    width: 100%;
+    font-family: 'Nunito', sans-serif;
+    background: url("http://bkphotography.x10host.com/images/virgin_islands_2_fullsize.jpg") center/cover;
+}
+#container {
+  display: block;
+  width: 65%;
+  height: auto;
+  margin: 1em auto;
+  padding: 1em;
+  text-align: center;
+  background-color: white;
+  opacity: .7;
     }
-    
-    #container {
-        display: grid;
-    }
-    
-    h1 {
-        grid-column-start: 1fr;
-        grid-column-end: 4fr;
-    }
-    
-    
-    
 </style>
 
 </head>
     
 <body>
-    <div id="container">
-<h1>SUPPOSED TO BE WORKING?</h1>
-<br>
-<h1>Don't want your boss to see your desktop?</h1>
-<br>
-<h2>Just hit ENTER</h2><br>
-<h3>...and hide it all...</h3>
-    </div>
+<div id="container">
+  <div class="item"><h2>SUPPOSED TO BE WORKING?</h2></div>
+<div class="item">Don't want your boss to see your desktop?</div>
+  <div class="item"><h3>Just hit ENTER</h3></div>
+  <div class="item"><h3>...and hide it all...</h3></div>
+</div>
 </body>
     
     
